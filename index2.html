@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto);
 
@@ -12,12 +13,14 @@
             box-sizing: border-box;
         }
         body{
+            background: #010615;
+        }
+        .avatarBox{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            min-height: 150vh;
-            background: #010615;
+            min-height: 100vh;
         }
         .box{
             position: relative;
@@ -127,6 +130,101 @@
         .box .content h2 span p{
             font-size: 15px;
         }
+        /* we are */
+        .weAre{
+            min-height: 100vh;
+        }
+
+        /* sosmed */
+        .sosmed{
+            display: flex;
+            min-height: 100vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .sosmed .icon{
+            position: relative;
+            display: block;
+            color: #666;
+            font-size: 100px;
+            height: 200px;
+            width: 200px;
+            background: #171515;
+            line-height: 200px;
+            border-radius: 50%;
+            margin: 35px 25px;      
+            cursor: pointer;
+        }
+        .sosmed .icon:before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            background: #d35400;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(0.9);
+            transition: 0.5s;
+            filter: blur(4px);
+        }        
+        .sosmed a .icon:hover{
+            transition: 0.75s;         
+        }
+        .sosmed a:nth-child(1) .icon:before{
+        background: #4267B2;
+        }
+        .sosmed a:nth-child(2) .icon:before{
+        background: #1DA1F2;
+        }
+        .sosmed a:nth-child(3) .icon:before{
+        background: #E1306C;
+        }
+        .sosmed a:nth-child(4) .icon:before{
+        background: #ff0000;
+        }
+        .sosmed a .icon:hover:before{
+        filter: blur(3px);
+        transform: scale(1.1);
+        }
+        .sosmed a:nth-child(1) .icon:hover:before{
+        box-shadow: 0 0 15px #4267B2;
+        }
+        .sosmed a:nth-child(2) .icon:hover:before{
+        box-shadow: 0 0 15px #1DA1F2;
+        }
+        .sosmed a:nth-child(3) .icon:hover:before{
+        box-shadow: 0 0 15px #E1306C;
+        }
+        .sosmed a:nth-child(4) .icon:hover:before{
+        box-shadow: 0 0 15px #ff0000;
+        }
+        .sosmed a:nth-child(1) .icon:hover{
+        color: #456cba;
+        box-shadow: 0 0 15px #4267B2;
+        text-shadow: 0 0 15px #4267B2;
+        }
+        .sosmed a:nth-child(2) .icon:hover{
+        color: #26a4f2;
+        box-shadow: 0 0 15px #1DA1F2;
+        text-shadow: 0 0 15px #1DA1F2;
+        }
+        .sosmed a:nth-child(3) .icon:hover{
+        color: #e23670;
+        box-shadow: 0 0 15px #E1306C;
+        text-shadow: 0 0 15px #E1306C;
+        }
+        .sosmed a:nth-child(4) .icon:hover{
+        color: #ff1a1a;
+        box-shadow: 0 0 15px #ff0000;
+        text-shadow: 0 0 15px #ff0000;
+        }
+
+        
+        /* scroll bar */
         ::-webkit-scrollbar{
             width: 0px;
         }
@@ -185,30 +283,50 @@
     <title>He3x</title>
 </head>
 <body>
-      
-    <div class="box">
-        <div class="imgBox">
-            <img src="./img/player1.png" alt="">
+    <div class="avatarBox">
+        <div class="box">
+            <div class="imgBox">
+                <img src="./img/player1.png" alt="">
+            </div>
+            <div class="content">
+                <h2>SANDOG<br><span>Frist in game name<p>-Since 2014</p></span></h2>
+            </div>
         </div>
-        <div class="content">
-            <h2>SANDOG<br><span>Frist in game name<p>-Since 2014</p></span></h2>
+        <div class="box">
+            <div class="imgBox">
+                <img src="./img/avatar.png" alt="">
+            </div>
+            <div class="content">
+                <h2>SA <br><span>My name<p>-Since 1997</p></span></h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="./img/player2.png" alt=""> 
+            </div>
+            <div class="content">
+                <h2>He3x<br><span>Second in game name<p>-Since 2019</p></span></h2>
+            </div>
         </div>
     </div>
-    <div class="box">
-        <div class="imgBox">
-            <img src="./img/avatar.png" alt="">
-        </div>
-        <div class="content">
-            <h2>SA <br><span>My name<p>-Since 1997</p></span></h2>
-        </div>
+    <!-- we are -->
+    <div class="weAre">
+
     </div>
-    <div class="box">
-        <div class="imgBox">
-            <img src="./img/player2.png" alt=""> 
-        </div>
-        <div class="content">
-            <h2>He3x<br><span>Second in game name<p>-Since 2019</p></span></h2>
-        </div>
+    <!-- medsos -->
+    <div class="sosmed">
+        <a href="https://web.facebook.com/sdq.amndn" target="_blank">
+            <div class="icon"><i class="fa fa-facebook-f"></i></div>
+        </a>
+        <a href="https://twitter.com/_he3x" target="_blank">
+            <div class="icon"><i class="fa fa-twitter"></i></div>
+        </a>
+        <a href="https://www.instagram.com/he.3x/" target="_blank">
+            <div class="icon"><i class="fa fa-instagram"></i></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCdCFZBJ4fvM8bSyIcw2UkLQ" target="_blank">
+            <div class="icon"><i class="fa fa-youtube-play"></i></div>
+        </a>
     </div>
     <!-- rgb scroll -->
     <div id="progressbar"></div>

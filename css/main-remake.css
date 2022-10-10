@@ -1,21 +1,23 @@
 
 
 :root {
-    --bg-color :  #fff;
-    --bg-box: whitesmoke;
-    --primary-color: #302AE6;
+    --bg-color :  #F9F9F9;
+    --bg-box: #F1F1F1;
+    --bg-box-content: rgba(255, 255, 255, 0.4);
+    --primary-color: #ffffff;
     --secondary-color: #536390;
-    --font-color: #424242;
-    --heading-color: #292922;
+    --heading-color: #000000;
+    --font-color: #616161;
 }
 
 [data-theme="dark"] {
+    --bg-color: #010615;
     --bg-box:#060c21;
+    --bg-box-content: rgba(0, 0, 0, 0.4);
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: var(--bg-box);
-    --heading-color: #818cab;
+    --heading-color: #e1e1ff;
+    --font-color: #818cab;
 }
 
 * {
@@ -30,17 +32,17 @@ body {
 }
 
 /*slider switch css */
+
+
 .theme-switch-wrapper {
+    margin-top: 8px;
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 100;
 }
-.theme-switch-wrapper em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+
 .theme-switch {
     display: inline-block;
     height: 20px;
@@ -53,7 +55,7 @@ body {
 }
 
 .slider {
-    background-color: #ccc;
+    background-color: rgb(116, 116, 116);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -192,7 +194,7 @@ input:checked+.slider:before {
     right: 10px;
     bottom: 10px;
     height: 90px;
-    background: rgba(0, 0, 0, 0.4);
+    background:var(--bg-box-content);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -206,7 +208,8 @@ input:checked+.slider:before {
 
 .box .content h2 {
     font-size: 27px;
-    color: #fff;
+    font-weight: bold;
+    color: var(--heading-color);
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 1px;
@@ -218,7 +221,7 @@ input:checked+.slider:before {
     font-size: 18px;
     font-weight: 50;
     margin: 5px 0;
-    color: rgb(158, 158, 158);
+    color:var(--font-color);
 }
 
 .box .content h2 span p {
@@ -229,6 +232,23 @@ input:checked+.slider:before {
 .about-me {
     min-height: 100vh;
 }
+
+.img-profil {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+.img-profil img {
+    max-width: 20%;
+    background: #bbff6e;
+    border-radius: 50%;
+}
+
 
 /* sosmed */
 .sosmed {

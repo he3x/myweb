@@ -7,6 +7,7 @@ body {
     background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(147.43deg, #00FFFF 0%, #FFFFFF 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00e7ff 100%), linear-gradient(64.82deg, #DBFF00 0%, #3300FF 100%);
     background-blend-mode: screen, overlay, color-burn, color-dodge, normal;
 }
+
 .warp-img {
     position: absolute;
     top: 55%;
@@ -16,30 +17,40 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
-#astrounut{
+
+#astrounut {
     max-width: 736px;
     min-width: 400px;
-    position: absolute;  
+    position: absolute;
     width: 100%;
     height: auto;
 }
 
-.second {
-    height: 100vh;
-    background: #84ffff;
-    background-image: linear-gradient(150deg, #baffff ,#84ffff 20%, #84ffff 100%);
-}
 .logo {
-   width: 40px;
+    width: 40px;
 }
 
-.logo img{
+.logo img {
     position: relative;
     float: left;
     width: 100%;
     background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-text h1{
+    text-align: right;
+}
+
+.header-vertical{
+    padding-top: 4%;
+    writing-mode: vertical-rl;
+}
+.second {
+    height: 100vh;
+    background: #84ffff;
+    background-image: linear-gradient(150deg, #baffff, #84ffff 20%, #84ffff 100%);
 }
